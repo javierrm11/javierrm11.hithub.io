@@ -1,0 +1,800 @@
+body{width:100%;overflow-x: hidden; margin: 0 auto;max-width:2000px; min-width: 1600px; background: #eae5e0;}
+
+
+.Titulo.abajo {
+    color: rgb(255, 255, 255);
+}
+
+.Navegacion.abajo1 a {
+    color: #fff;
+}
+.cabecera {
+    background:  rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    
+    padding: 2rem 0;
+    background-image: url("C:\Users\javie\OneDrive\Escritorio\Y\img\3a596607e7652517e1eacd044f1b337b.jpg");
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    
+}
+
+.cabecera.abajo2 {
+    background:  rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(40px);
+    padding: 1rem 0;
+    z-index: 4;
+}
+
+.rectangulo {
+        width: 100%;
+        height: 14%;
+        background-color: #fff;
+        position: absolute;
+        z-index: 1;
+    }
+
+.cabecera a {
+    text-decoration: none;
+    font-weight: bold;
+    
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.Titulo {
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-size: 1.4em;
+    margin-left: 100px;
+    z-index: 3;
+    color: #5a5a5a;
+}
+
+.Navegacion {
+    text-align: right;
+    margin-right: 20px;
+    position:relative;
+    z-index: 3;
+}
+
+.Navegacion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.Navegacion ul li {
+    display: inline-block;
+}
+
+.Navegacion ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    font-size: 19.2px;
+    color: #5a5a5a;
+}
+
+.Navegacion ul li a:hover {
+    background: #7c7c7c;
+}
+
+.principio {
+    box-shadow: 0px 4px 10px -5px black inset;
+    align-content: center; 
+    line-height:0;
+    margin-bottom: -25px;
+}
+
+.imagen1 {
+    background-image: url("https://global-uploads.webflow.com/5f5a53e153805db840dae2db/6073fbc8ece768495cc698ca_programador-senior.jpeg");
+
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    top: 90px;
+
+    transition: 5.5s ease-in-out;
+    mask-repeat: no-repeat;
+
+    align-content: center;
+    object-fit: contain;
+    object-fit: cover;
+
+    filter: brightness(50%);
+    overflow: scroll;
+}
+
+.texto {
+    height: 100px;
+    width: 100%;
+    min-width: 1600px;
+    margin: 0;
+    top: 110px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+.texto_animado {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: aqua;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 100px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-right: 15px;
+
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: -13%;
+    min-width: 1600px;
+    overflow: hidden;
+}
+
+.lista {
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 5s infinite;
+}
+
+.tecnico {
+    margin-left: 160px;
+}
+
+.informatico {
+    display:inline-block;
+    position: absolute;
+    width: 100%;
+    line-height: 100px;
+    height: 100px;
+    text-align: left;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    left: calc(50% + 10px);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.glow-on-hover {
+    width: 650px;
+    height: 70px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    position: absolute;
+    z-index: 0;
+    border-radius: 20px;
+    top: 87%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: -22%;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 10px;
+    z-index: 1;
+    animation: opacidad4 1.5s;
+    
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.yo_principal {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    left: 450px;
+    top: 22%;
+    filter: brightness(70%);
+    animation: opacidad3 3s;
+}
+
+.yo_2 {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    left: 600px;
+    top: 22%;
+    filter: brightness(70%);
+    z-index: 0;
+    animation: opacidad2 3s;
+}
+
+.yo_1 {
+    width: 95%;
+    height: auto;
+    position: absolute;
+    left: 280px;
+    top: -88%;
+    filter: brightness(90%);
+    animation: opacidad1 5s;
+}
+
+.texto {
+    align-content: center;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    top: 110px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@keyframes cambiar {
+   0%{ margin-top: 0;}
+   23%{margin-top: 0;}
+   
+   43%{margin-top: -100px;}
+   66%{margin-top: -100px;}
+
+   86%{margin-top: 0;}
+   100%{margin-top: 0;}
+   
+}
+
+@keyframes opacidad1 {
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes opacidad2 {
+    0%{ opacity: 0;
+        transform: translateX(-25%)}
+    50%{opacity: 0;
+        transform: translateX(-25%)}
+    80%{opacity: 0;
+        transform: translateX(-25%)}
+    100%{opacity: 1;
+        transform: translateX(0px)}
+}
+
+@keyframes opacidad3 {
+    0%{ opacity: 0;
+        transform: translateX(25%)}
+    50%{opacity: 0;
+        transform: translateX(25%)}
+    80%{opacity: 0;
+        transform: translateX(25%)}
+    100%{opacity: 1;
+        transform: translateX(0px)}
+}
+
+@keyframes opacidad4 {
+    0% {opacity: 0;
+        transform: translateY(305%);}
+    100% {opacity: 1;
+        transform: translateY(0%);}
+}
+
+
+.texto_animado {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+.texto_led {
+    position: absolute;
+    top: 76%;
+    align-content: center;
+    width: 100%;
+    height: 100px;
+    min-width: 1600px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.yo {
+    position: absolute;
+    top: -10%;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    min-width: 1600px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+.SobreMi {
+    background: #eae5e0;
+    width: 100%;
+    min-width: 1600px;
+}
+
+.titulo_sobremi {
+    text-align: center;
+    align-content: center;
+    top: 105%;
+    position:absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    height: 200px;
+    color: #5a5a5a;
+    min-width: 1600px;
+    filter: brightness(10%);
+}
+
+.textosobremi {
+    text-align: left;
+    padding-left: 13%;
+    top: 115%;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    height: 200px;
+    color: #5a5a5a;
+    min-width: 1600px;
+}
+
+.javi {
+    text-align: left;
+    padding-left: 29%;
+    top: 115%;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    height: 200px;
+    color: aqua;
+    min-width: 1600px;
+    text-shadow: 2px 2px 2px #5a5a5a;
+}
+
+.soyyo {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    left: 13%;
+    top: 135%;
+    filter: brightness(70%);
+}
+
+.tabla {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    left: 60%;
+    top: 119%;
+    z-index: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tabla td {
+    padding: 20px;
+}
+
+.Titulo21 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #5a5a5a
+}
+
+
+.tabla {
+    border-collapse: collapse;
+    border-spacing: 0px 20px;
+}
+
+.tabla * tr:not(:first-of-type) {
+    border-top: 1px solid #959595c3;
+}
+
+tr.Nombre, tr.FechaNacimiento {
+    background-color: rgb(181 178 178);
+}
+
+
+
+
+.Formación {
+        background: #eae5e0;
+        width: 100%;
+        min-width: 1600px;
+        margin-top: 50%;
+        height: 40%;
+    }
+
+.tituloformacion {
+    text-align: center;
+    align-content: center;
+    position:relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    height: 200px;
+    color: #5a5a5a;
+    min-width: 1600px;
+    filter: brightness(10%);
+}
+
+.habilidad {
+    align-content: left;
+    text-align: left;
+    width: 50%;
+    margin-top: -10%;
+    display: flex;
+}
+
+.habilidadtexto {
+    position:absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    height: 200px;
+    color: #5a5a5a;
+    min-width: 1600px;
+    margin-top: 2%;
+    margin-left: 22%;
+}
+
+.html {
+    width: 9%;
+    height: auto;
+    position: absolute;
+    left: 12%;
+    margin-top: 7%;
+    padding:10px ;
+    z-index: 1;
+}
+
+.css {
+    width: 16%;
+    height: auto;
+    position: absolute;
+    left: 19.5%;
+    margin-top: 7%;
+    padding:10px ;
+    z-index: 1;
+}
+
+.java {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    left: 33%;
+    margin-top: 7.5%;
+    padding:10px ;
+    z-index: 1;
+}
+
+.sql {
+    width: 8%;
+    height: auto;
+    position: absolute;
+    left: 12%;
+    margin-top: 20%;
+    padding:10px ;
+    z-index: 1;
+}
+
+.ps {
+    width: 8%;
+    height: auto;
+    position: absolute;
+    left: 23.5%;
+    margin-top: 20%;
+    padding:10px ;
+    z-index: 1;
+}
+
+.pr {
+    width: 7.3%;
+    height: auto;
+    position: absolute;
+    left: 35.5%;
+    margin-top: 20.5%;
+    padding:10px ;
+    z-index: 1;
+}
+
+
+
+.estudios {
+    text-align: right;
+    width: 50%;
+    display: flex;
+}
+
+.estudiostexto {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    height: 200px;
+    color: #5a5a5a;
+    min-width: 1600px;
+    margin-top: 2%;
+    margin-right: 24%;
+    right: -6%;
+}
+
+
+
+
+.cursos {
+    border-collapse: collapse;
+    border-spacing: 0px 20px;
+}
+
+.cursos {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 55%;
+    margin-top: 17%;
+    z-index: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cursos td {
+    padding: 6px;
+    text-align: left;
+    padding-left: 0px;
+    font-size: 14px;
+    color: #000;
+}
+
+.cursos th {
+    font-size: 25px;
+    color: #5a5a5a;
+    text-align: left;
+}
+
+.cursos * tr:not(:first-of-type) {
+    border-top: 1px solid #959595c3;
+}
+
+tr.photoshop, tr.htmlcurso, tr.javasscript {
+    background-color: rgb(181 178 178);
+}
+
+
+.estudiostabla {
+    border-collapse: collapse;
+    border-spacing: 0px 20px;
+}
+
+.estudiostabla {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 55%;
+    margin-top: 7%;
+    z-index: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.estudiostabla td {
+    padding: 6px;
+    text-align: left;
+    padding-left: 0px;
+    font-size: 14px;
+}
+
+.estudiostabla th {
+    font-size: 25px;
+    color: #5a5a5a;
+    text-align: left;
+}
+
+.estudiostabla * tr:not(:first-of-type) {
+    border-top: 1px solid #959595c3;
+}
+
+tr.encabezado, tr.grado {
+    background-color: rgb(181 178 178);
+}
+
+
+
+
+.Contacto {
+    background: #eae5e0;
+    width: 100%;
+    margin-top: 32%;
+    height: 20%;
+}
+
+.titulocontacto {
+text-align: center;
+align-content: center;
+position: relative;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 40px;
+font-weight: bold;
+width: 100%;
+margin-top: 0%;
+height: 200px;
+color: #5a5a5a;
+filter: brightness(10%);
+}
+
+
+.formcontenedor {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display:grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.formtitulo {
+    text-align: center;
+    font-size: 30px;
+    color: #5a5a5a;
+    margin-bottom: .4em;
+    color: #ffff;
+}
+.forminput {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+
+.formcta {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    background-color: #089fe0;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+}
+
+.form {
+    background-color: #0000009b;
+    width: 90%;
+    min-width: 400px;
+    max-width: 1000px;
+    border-radius: 1em;
+    padding: 0.5em 1.5em;
+    padding-bottom: 2em;
+    margin: auto;
+    margin-top: -10%;
+    align-content: center;
+
+}
+
+.forminput--message {
+    resize: none;
+    padding-bottom: 6em;
+}
+
+.scroll {
+    z-index: 5;
+}
+
+.partefinal {
+    background-color: #2b2a2a;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 250px;
+}
+
+.partefinaltabla {
+    position: relative;
+    top: 10%;
+    width: 70%;
+    text-align: center;
+   left: 20%;
+}
+
+.partefinaltabla th, .partefinaltabla td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.685);
+    padding: 5px;
+    text-align: left;
+}
+
+.partefinaltabla th {
+    font-weight: bold;
+    text-decoration: underline rgba(255, 255, 255, 0.685);
+    text-underline-offset: 3px;;
+}
+
+.partefinaltabla a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+
+
+
+
+
+
+
+
+
+ 
